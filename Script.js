@@ -43,3 +43,13 @@ revealElements.forEach(element => {
   element.classList.add("reveal");
   observer.observe(element);
 });
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
